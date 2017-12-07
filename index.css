@@ -1,6 +1,7 @@
-
 .face
 {
+    position: relative;
+    width: 1300px;
     display: grid;
     grid-template-columns: 200px repeat(3, 1fr) 200px;
     grid-template-rows: repeat(4, max-content);
@@ -17,19 +18,19 @@
     grid-area: geo;
 }
 
-.settingsControl
+.settings-control
 {
     grid-area: set;
     direction: rtl;
     padding: 10px;
 }
 
-.showSettings
+.settings_show
 {
     cursor: pointer;
 }
 
-input[id='showSettings']:checked ~ .settings
+input[id='settings_show']:checked ~ .settings
 {
     display: block;
 }
@@ -38,10 +39,10 @@ input[id='showSettings']:checked ~ .settings
 {
     display: none;
     position: absolute;
-    right: 20%;
+    right: 15%;
     top: 45px;
-    box-shadow: 0 0 2px #817c7c;
-    background: #fff;
+    box-shadow: 0 0 2px rgb(104, 101, 101);
+    background: rgb(255,255,255);
 }
 
 .settings label::before
@@ -74,16 +75,16 @@ input[id='poster']:checked ~ .settings label[for='poster']:before
     background-image: url(img/uncheck.png);
 }
 
-input[id='services']:checked ~ .face .services,
-input[id='jokes']:checked ~ .face .jokes,
-input[id='tv']:checked ~ .face .tv,
-input[id='auto']:checked ~ .face .auto,
-input[id='weather']:checked ~ .face .weather,
-input[id='traffic']:checked ~ .face .traffic,
-input[id='map']:checked ~ .face .maps,
-input[id='poster']:checked ~ .face .poster,
-input[id='services']:checked ~ input[id='jokes']:checked ~ .face .column-1,
-input[id='tv']:checked ~ input[id='auto']:checked ~ .face .column-2
+input[id='services']:checked ~ .widgets .services,
+input[id='jokes']:checked ~ .widgets .jokes,
+input[id='tv']:checked ~ .widgets .tv,
+input[id='auto']:checked ~ .widgets .auto,
+input[id='weather']:checked ~ .widgets .weather,
+input[id='traffic']:checked ~ .widgets .traffic,
+input[id='map']:checked ~ .widgets .maps,
+input[id='poster']:checked ~ .widgets .poster,
+input[id='services']:checked ~ input[id='jokes']:checked ~ .widgets .column-1,
+input[id='tv']:checked ~ input[id='auto']:checked ~ .widgets .column-2
 {
     display: none;
 }
@@ -92,12 +93,12 @@ input[id='tv']:checked ~ input[id='auto']:checked ~ .face .column-2
 {
     grid-area: mail;
     padding: 10px;
-    box-shadow: 0 0 2px 2px #8b8a8a;
+    box-shadow: 0 0 2px 2px rgb(104, 101, 101);
 }
 
 .login::first-letter
 {
-    color: red;
+    color: rgb(204, 5, 5);
 }
 
 .news
@@ -154,13 +155,9 @@ a
     color: rgb(37, 37, 172);
 }
 
-.news__block a,
-.services__list a,
-.autoNews__list a,
-.maps__service a,
-.poster__list a
+.link_black
 {
-    color: black;
+    color: rgb(0,0,0);
 }
 
 .face a:hover
@@ -195,9 +192,9 @@ h2
 }
 
 .text_grey,
-.autoNews__list .time
+.auto__news__list .time
 {
-    color: gray;
+    color: rgb(144, 144, 158);
 }
 
 .currency-rate.item
@@ -221,7 +218,7 @@ h2
 .input-search,
 .button-search
 {
-    border: 2px solid #ffdb4d;
+    border: 2px solid  rgb(255, 174, 0);
 }
 
 .input-search
@@ -235,7 +232,7 @@ h2
 {
     position: relative;
     width: 75px;
-    background-color: #ffdb4d;
+    background-color: rgb(255, 174, 0);
     font-size: 16px;
     cursor: pointer;
 }
@@ -296,27 +293,27 @@ li
     margin: 10px 0;
 }
 
-.autoNews
+.auto__news
 {
     position: relative;
     max-height: 300px;
 }
 
-.autoNews__list
+.auto__news__list
 {
     padding: 30px 0;
     overflow-y: scroll;
     height: 220px;
 }
 
-.autoNews__list::before
+.auto__news__list::before
 {
     top: 0;
-    background: linear-gradient(to bottom, #fff, rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0));
 }
 
-.autoNews__list::before,
-.autoNews__list::after
+.auto__news__list::before,
+.auto__news__list::after
 {
     content: '';
     position: absolute;
@@ -324,13 +321,13 @@ li
     height: 50px;
 }
 
-.autoNews__list::after
+.auto__news__list::after
 {
     bottom: 0;
-    background: linear-gradient(to top, #fff, rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 0, 0, 0));
 }
 
-.autoNews__list::-webkit-scrollbar
+.auto__news__list::-webkit-scrollbar
 {
     display: none;
 }

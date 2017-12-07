@@ -6,32 +6,32 @@
     <title>Задача «Морда»</title>
 </head>
 <body>
-    <input type="checkbox" id="services">
-    <input type="checkbox" id="jokes">
-    <input type="checkbox" id="tv">
-    <input type="checkbox" id="auto">
-    <input type="checkbox" id="weather">
-    <input type="checkbox" id="traffic">
-    <input type="checkbox" id="map">
-    <input type="checkbox" id="poster">
-    <input type="checkbox" id="showSettings">
-    <div class="settings">
-        <label for="services">Посещаемое</label>
-        <label for="jokes">Анекдоты</label>
-        <label for="tv">Телепрограмма</label>
-        <label for="auto">Автомобильные новости</label>
-        <label for="weather">Погода</label>
-        <label for="traffic">Пробки</label>
-        <label for="map">Карта Екатеринбурга</label>
-        <label for="poster">Афиша</label>
-    </div>
     <div class="face">
+        <input type="checkbox" id="services">
+        <input type="checkbox" id="jokes">
+        <input type="checkbox" id="tv">
+        <input type="checkbox" id="auto">
+        <input type="checkbox" id="weather">
+        <input type="checkbox" id="traffic">
+        <input type="checkbox" id="map">
+        <input type="checkbox" id="poster">
+        <input type="checkbox" id="settings_show">
+        <div class="settings">
+            <label for="services">Посещаемое</label>
+            <label for="jokes">Анекдоты</label>
+            <label for="tv">Телепрограмма</label>
+            <label for="auto">Автомобильные новости</label>
+            <label for="weather">Погода</label>
+            <label for="traffic">Пробки</label>
+            <label for="map">Карта Екатеринбурга</label>
+            <label for="poster">Афиша</label>
+        </div>
         <a class="geolocation text_grey" href="https://yandex.ru/tune/geo/">
             <div class="geolocation__arrow"></div>
             Екатеринбург
         </a>
-        <div class="settingsControl">
-            <label for="showSettings" class="showSettings">Настройка</label>
+        <div class="settings-control">
+            <label for="settings_show" class="settings_show">Настройка</label>
         </div>
         <div class="mail">
             <div class="login"><strong>login</strong></div>
@@ -45,19 +45,19 @@
             </section>
             <ul class="news__block">
                 <li>
-                    <a href="#">Путин заявил о скором завершении военной операции в Сирии</a>
+                    <a class="link_black" href="#">Путин заявил о скором завершении военной операции в Сирии</a>
                 </li>
                 <li>
-                    <a href="#">Школьник из ЯНАО рассказал в Бундестаге о «невинных солдатах вермахта»</a>
+                    <a class="link_black" href="#">Школьник из ЯНАО рассказал в Бундестаге о «невинных солдатах вермахта»</a>
                 </li>
                 <li>
-                    <a href="#">Вашингтон не осудил обстрел посольства России в Сирии</a>
+                    <a class="link_black" href="#">Вашингтон не осудил обстрел посольства России в Сирии</a>
                 </li>
                 <li>
-                    <a href="#">Задержанный в Минске украинский журналист признался в шпионаже</a>
+                    <a class="link_black" href="#">Задержанный в Минске украинский журналист признался в шпионаже</a>
                 </li>
                 <li>
-                    <a href="#">Росгидромет сообщил о концентрации рутения-106 на Южном Урале</a>
+                    <a class="link_black" href="#">Росгидромет сообщил о концентрации рутения-106 на Южном Урале</a>
                 </li>
             </ul>
             <div class="currency-rate">
@@ -112,13 +112,13 @@
                     <div class="widget services">
                         <h2><a class="heading_blue" href="#">Посещяемое</a></h2>
                         <ul class="services__list">
-                            <li><a href="#">Маркет</a> — товары из Китая</li>
-                            <li><a href="#">Авто.ру</a> — автомобили Peugeot</li>
-                            <li><a href="#">Недвижимость</a> — купить двухкомнатную</li>
-                            <li><a href="#">Работа</a> —  вахтовая работа</li>
-                            <li><a href="#">Видео</a> — кино о дружбе</li>
-                            <li><a href="#">Здоровье</a> — врач на связи</li>
-                            <li><a href="#">Такси</a> — выгодно по городу</li>
+                            <li><a class="link_black" href="#">Маркет</a> — товары из Китая</li>
+                            <li><a class="link_black" href="#">Авто.ру</a> — автомобили Peugeot</li>
+                            <li><a class="link_black" href="#">Недвижимость</a> — купить двухкомнатную</li>
+                            <li><a class="link_black" href="#">Работа</a> —  вахтовая работа</li>
+                            <li><a class="link_black" href="#">Видео</a> — кино о дружбе</li>
+                            <li><a class="link_black" href="#">Здоровье</a> — врач на связи</li>
+                            <li><a class="link_black" href="#">Такси</a> — выгодно по городу</li>
                         </ul>
                     </div>
                     <div class="widget jokes">
@@ -177,46 +177,46 @@
                 </div>
                 <div class="widget auto">
                     <h2><a class="heading_blue" href="autonews">Автомобильные новости</a></h2>
-                    <section class="autoNews">
-                        <ul class="autoNews__list">
-                            <li class="autoNews__list-item">
-                                <a href="#">Правительство поддержало законопроект о регистрации машиномест</a>
+                    <section class="auto__news">
+                        <ul class="auto__news__list">
+                            <li class="auto__news__list-item">
+                                <a class="link_black" href="#">Правительство поддержало законопроект о регистрации машиномест</a>
                                 <time datetime="12:19" class="time">12:19</time>
                             </li>
-                            <li class="autoNews__list-item">
-                                <a href="#">Обзор нового Mitsubishi, за которым выстроилась очередь</a>
+                            <li class="auto__news__list-item">
+                                <a class="link_black" href="#">Обзор нового Mitsubishi, за которым выстроилась очередь</a>
                                 <time datetime="12:20" class="time">12:20</time>
                             </li>
-                            <li class="autoNews__list-item">
-                                <a href="#">Лады оснастят системой управления со смартфона</a>
+                            <li class="auto__news__list-item">
+                                <a class="link_black" href="#">Лады оснастят системой управления со смартфона</a>
                                 <time datetime="12:25" class="time">12:25</time>
                             </li>
-                            <li class="autoNews__list-item">
-                                <a href="#">В Китае представили спорткар с двигателем от Focus RS</a>
+                            <li class="auto__news__list-item">
+                                <a class="link_black" href="#">В Китае представили спорткар с двигателем от Focus RS</a>
                                 <time datetime="12:29" class="time">12:29</time>
                             </li>
-                            <li class="autoNews__list-item">
-                                <a href="#">Священник отчитал прихожан, а они заставили его продать Porshe</a>
+                            <li class="auto__news__list-item">
+                                <a class="link_black" href="#">Священник отчитал прихожан, а они заставили его продать Porshe</a>
                                 <time datetime="12:30" class="time">12:30</time>
                             </li>
-                            <li class="autoNews__list-item">
-                                <a href="#">Правительство поддержало законопроект о регистрации машиномест</a>
+                            <li class="auto__news__list-item">
+                                <a class="link_black" href="#">Правительство поддержало законопроект о регистрации машиномест</a>
                                 <time datetime="12:19" class="time">12:19</time>
                             </li>
-                            <li class="autoNews__list-item">
-                                <a href="#">Обзор нового Mitsubishi, за которым выстроилась очередь</a>
+                            <li class="auto__news__list-item">
+                                <a class="link_black" href="#">Обзор нового Mitsubishi, за которым выстроилась очередь</a>
                                 <time datetime="12:20" class="time">12:20</time>
                             </li>
-                            <li class="autoNews__list-item">
-                                <a href="#">Лады оснастят системой управления со смартфона</a>
+                            <li class="auto__news__list-item">
+                                <a class="link_black" href="#">Лады оснастят системой управления со смартфона</a>
                                 <time datetime="12:25" class="time">12:25</time>
                             </li>
-                            <li class="autoNews__list-item">
-                                <a href="#">В Китае представили спорткар с двигателем от Focus RS</a>
+                            <li class="auto__news__list-item">
+                                <a class="link_black" href="#">В Китае представили спорткар с двигателем от Focus RS</a>
                                 <time datetime="12:29" class="time">12:29</time>
                             </li>
-                            <li class="autoNews__list-item">
-                                <a href="#">Священник отчитал прихожан, а они заставили его продать Porshe</a>
+                            <li class="auto__news__list-item">
+                                <a class="link_black" href="#">Священник отчитал прихожан, а они заставили его продать Porshe</a>
                                 <time datetime="12:30" class="time">12:30</time>
                             </li>
                         </ul>
@@ -242,32 +242,34 @@
                 <div class="widget maps">
                     <h2><a class="heading_blue" href="#">Карта Екатеринбурга</a></h2>
                     <section class="maps__service">
-                        <a href="#">Такси</a>
-                        <a href="#">Расписания</a>
+                        <a class="link_black" href="#">Такси</a>
+                        <a class="link_black" href="#">Расписания</a>
                     </section>
-                    <section class="maps__service"><a href="#">Междугородные автобусы</a></section>
+                    <section class="maps__service">
+                        <a class="link_black" href="#">Междугородные автобусы</a>
+                    </section>
                 </div>
                 <div class="widget poster">
                     <h2><a class="heading_blue" href="#">Афиша</a></h2>
                     <ul class="poster__list">
                         <li>
-                            <a href="#">Тор: Рагнарёк</a>
+                            <a class="link_black" href="#">Тор: Рагнарёк</a>
                             <span class="genre text_grey">фэнтези</span>
                         </li>
                         <li>
-                            <a href="#">Лига справедливости</a>
+                            <a class="link_black" href="#">Лига справедливости</a>
                             <span class="genre text_grey">премьера</span>
                         </li>
                         <li>
-                            <a href="#">Убийство в Восточном…</a>
+                            <a class="link_black" href="#">Убийство в Восточном…</a>
                             <span class="genre text_grey">драма</span>
                         </li>
                         <li>
-                            <a href="#">Последний богатырь</a>
+                            <a class="link_black" href="#">Последний богатырь</a>
                             <span class="genre text_grey">приключения</span>
                         </li>
                         <li>
-                            <a href="#" class="bolder">Концерты — Каста</a>
+                            <a class="link_black" href="#" class="bolder">Концерты — Каста</a>
                         </li>
                     </ul>
                 </div>
