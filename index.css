@@ -309,7 +309,8 @@ li
 .auto__news__list::before
 {
     top: 0;
-    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom,
+    rgb(255, 255, 255), rgba(0, 0, 0, 0));
 }
 
 .auto__news__list::before,
